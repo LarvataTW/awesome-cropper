@@ -1,0 +1,23 @@
+{
+  "name": "awesome-cropper",
+  "version": "1.0.0",
+  "homepage": "https://github.com/LarvataTW/awesome-cropper",
+  "authors": [
+    "Andrew Kulakov"
+  ],
+  "description": "Awesome croper is jQuery plugin to produce form component that can upload images from local and remote destinations and set crop area.",
+  "main": "build/jquery.awesome-cropper.js",
+  "keywords": [
+    "image",
+    "crop",
+    "awesome"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
