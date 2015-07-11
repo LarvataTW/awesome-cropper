@@ -9,7 +9,8 @@
     settings = {
       width: 100,
       height: 100,
-      debug: false
+      debug: false,
+      resultImClass: ""
     };
     settings = $.extend(settings, options);
     log = function() {
@@ -54,6 +55,7 @@
     }));
     $container.append($progressBar);
     $resultIm = image();
+    $resultIm.addClass(settings.resultImClass);
     $container.append($resultIm);
     $sourceIm = image();
     $applyButton = a('Apply').addClass('btn yes btn-primary');
