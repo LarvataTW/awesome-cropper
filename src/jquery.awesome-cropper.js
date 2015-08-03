@@ -9,7 +9,8 @@
     settings = {
       width: 100,
       height: 100,
-      debug: false
+      debug: false,
+      firstTimeDrawDelay: 500
     };
     settings = $.extend(settings, options);
     log = function() {
@@ -137,7 +138,9 @@
         y2 = Math.round(settings.height * (image.width() / settings.width));
       }
       log(x2, y2, image.width(), image.height());
-      drawImage($sourceIm, 0, 0, x2 - 1, y2 - 1);
+      setTimeout(function(){
+          drawImage($sourceIm, 0, 0, x2 - 1, y2 - 1);
+      },settings.firstTimeDrawDelay);
       return image.imgAreaSelect({
         aspectRatio: "" + settings.width + ":" + settings.height,
         handles: true,
