@@ -163,9 +163,9 @@
     };
     fileAllowed = function(name) {
       var res;
-      res = name.match(/\.(jpg|png|gif|jpeg)$/mi);
+      res = name.match(/\.(jpg|gif|jpeg)$/mi);
       if (!res) {
-        alert('Only *.jpeg, *.jpg, *.png, *.gif files allowed');
+        alert('Only *.jpeg, *.jpg, *.gif files allowed');
         return false;
       } else {
         return true;
